@@ -1,0 +1,90 @@
+/**
+ * @file
+ *
+ * Styles for the home page.
+ */
+body, html {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.hero {
+    background-image: url(../img/code.jpeg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    > ul {
+        flex-grow: 1;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+    }
+    .skill {//Have skills slide down and change color based off category with an after or before element that scrolls down slower than the scroll
+        cursor: pointer;
+        margin: 15px 0;
+        overflow: hidden;
+        padding: 15px;
+        position: relative;
+        text-align: center;
+        &:before {
+            background-color: $gray;
+            content: '';
+            display: block;
+            height: 0;
+            left: 0;
+            position: absolute;
+            top: 0;
+            transition: height 1s ease;
+            width: 100%;
+            z-index: 1;
+        }
+        &:hover {
+            &:before {
+                height: 100%;
+            }
+            > span {
+                height: 100px;
+            }
+        }
+        .skill-description {
+            background-color: rgba(255,255,255,.25);
+            height: 0;
+            overflow: hidden;
+            padding: 0 15px;
+            transition: height 1.25s ease;
+            > span {
+                display: block;
+                padding: 15px 0;
+            }
+        }
+        .skill-title {
+            color: white;
+            margin: 0;
+            padding: 15px;
+        }
+        .skill-description, .skill-title {
+            display: block;
+            position: relative;
+            z-index: 2;
+        }
+    }
+    .developmentSoftware-skills .skill {
+        background-color: $orange;
+    }
+    .general-skills .skill {
+        background-color: $purple;
+    }
+    .operatingSystem-skills .skill {
+        background-color: $green;
+    }
+    .webDevelopment-skills .skill {
+        background-color: $blue;
+    }
+}

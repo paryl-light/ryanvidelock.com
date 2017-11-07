@@ -1,0 +1,27 @@
+---
+layout: home
+---
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body{% if page.class %} class="{{ page.class | prepend: 'page--'  }}"{% else %} class="{{ page.layout | prepend: 'page--' }}"{% endif %}>
+		{% include components/navigation--mobile.html %}
+        {% include regions/header.html %}
+
+        <div class="hero">
+            <div class="bcg">
+                <div class="container">
+                    <div class="hsContent">
+                        <h1>My name is Ryan Videlock</h1>
+                        <h2>Web Development and SEO is my jam</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container main-content">   
+            {{ content }}
+        </div>
+        {% include regions/footer.html %}
+		{% include scripts.html %}
+    </body>
+</html>
