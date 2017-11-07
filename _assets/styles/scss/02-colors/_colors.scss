@@ -1,0 +1,31 @@
+// Primary colors.
+$gray: #2A2D34;
+$blue: #009DDC;
+$orange: #F26430;
+$purple: #6761A8;
+$green: #009B72;
+$white: #fff;
+$black: #000;
+
+// Utility colors.
+$text-color: $black;
+$heading-color: $black;
+
+//ftm colors
+$action-ftm-color: $orange;
+$action-ftm-color-hover: darken($orange, 10%);
+$link-color: $orange;
+$link-color-hover: darken($orange, 10%);
+
+//mtf colors
+$action-mtf-color: $blue;
+$action-mtf-color-hover: darken($blue, 10%);
+$link-color: $blue;
+$link-color-hover:darken($blue, 10%);
+
+// Helper classes.
+.bg-darkblue { background-color: $blue; }
+.bg-orange { background-color: $orange; }
+
+.c-darkblue { color: $blue; }
+.c-orange { color: $orange; }
