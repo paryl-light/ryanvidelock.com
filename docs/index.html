@@ -16,7 +16,7 @@
 	
 	<script>
 	!function(e){"use strict";var t=function(t,n,r){function o(e){return i.body?e():void setTimeout(function(){o(e)})}function l(){d.addEventListener&&d.removeEventListener("load",l),d.media=r||"all"}var a,i=e.document,d=i.createElement("link");if(n)a=n;else{var s=(i.body||i.getElementsByTagName("head")[0]).childNodes;a=s[s.length-1]}var u=i.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",o(function(){a.parentNode.insertBefore(d,n?a:a.nextSibling)});var f=function(e){for(var t=d.href,n=u.length;n--;)if(u[n].href===t)return e();setTimeout(function(){f(e)})};return d.addEventListener&&d.addEventListener("load",l),d.onloadcssdefined=f,f(l),d};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),function(e){if(e.loadCSS){var t=loadCSS.relpreload={};if(t.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(t){}},t.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var r=t[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(e.loadCSS(r.href,r),r.rel=null)}},!t.support()){t.poly();var n=e.setInterval(t.poly,300);e.addEventListener&&e.addEventListener("load",function(){e.clearInterval(n)})}}}(this);
-	loadCSS('/assets/styles/main.css?1510077206622675000');
+	loadCSS('/assets/styles/main.css?1510264687555193000');
 	loadCSS('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 	</script>
 
@@ -56,7 +56,7 @@
 			
 			
 				<li class="nav-color-white active">
-					<a href="/index">
+					<a href="#me">
 						<span class="nav-item-fg">Me</span>
 						<span class="nav-item-bg"></span>
 					</a>
@@ -67,8 +67,12 @@
 </nav>
 	</div>
 </header>
-
-        <div class="hero">
+        <div class="hero parallax-container">
+            <a id="me" class="sr-only"></a>
+            <div class="parallax-layer layer-1"><img src="/assets/img/code1.png" alt="" /></div>
+            <div class="parallax-layer layer-2"><img src="/assets/img/code2.png" alt="" /></div>
+            <div class="parallax-layer layer-3"><img src="/assets/img/code3.png" alt="" /></div>
+            <div class="parallax-layer layer-4"><img src="/assets/img/code4.png" alt="" /></div>
             <div class="bcg">
                 <div class="container">
                     <div class="hsContent">
@@ -77,9 +81,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container main-content">   
-            
+            <div class="parallax-cover">
+                <div class="container main-content">   
+                    
 <h3 id="what-kind-of-skills-you-can-expect-from-me">What kind of skills you can expect from me</h3>
 <div class="skills">
     <ul class="general-skills">
@@ -193,7 +197,7 @@
     </li>
 
     <li class="developmentSoftware-skill-20 skill">
-        <h4 class="skill-title">Photoshop/Illustrator</h4>
+        <h4 class="skill-title">Photoshop &amp; Illustrator</h4>
         <span class="skill-description"><span>Photoshop and Illustrator are probably the best tools for editing and refining images, text and way way more. I've used it since I first started in development.</span></span>
     </li>
 
@@ -210,14 +214,16 @@
 </ul>
 </div>
 
+                </div>
+            </div>
         </div>
         <footer class="region--footer" role="contentinfo">
 	
 </footer>
-		<script type="text/javascript" src="/assets/js/main.js?1510077206622675000" async></script>
+		<script type="text/javascript" src="/assets/js/main.js?1510264687555193000" async></script>
 
 <noscript>
-	<link href='/assets/styles/main.css?1510077206622675000' rel='stylesheet' type='text/css'>
+	<link href='/assets/styles/main.css?1510264687555193000' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:300,400,800" rel="stylesheet">
 </noscri
     </body>

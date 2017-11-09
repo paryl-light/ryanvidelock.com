@@ -236,6 +236,7 @@ $opacity: .9;
 	background-color: $white;
 	position: fixed;
 	width: 100%;
+	z-index: 9999;
 }
 .hidden-header-home {
 	pointer-events: none;
