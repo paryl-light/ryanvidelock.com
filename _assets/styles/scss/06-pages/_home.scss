@@ -8,11 +8,6 @@ body, html {
     position: relative;
     width: 100%;
 }
-.hero {
-    background-image: url(../img/code.jpeg);
-    background-repeat: no-repeat;
-    background-size: 120%;
-}
 .skills {
     display: flex;
     flex-direction: row;
@@ -23,11 +18,11 @@ body, html {
         list-style: none;
         margin: 0;
         padding: 0 15px;
-        @include media-breakpoint-up(lg){
-            width: 25%;
-        }
         @include media-breakpoint-up(md){
             width: 50%;
+        }
+        @include media-breakpoint-up(lg){
+            width: 25%;
         }
     }
     .skill {//Have skills slide down and change color based off category with an after or before element that scrolls down slower than the scroll
@@ -69,7 +64,7 @@ body, html {
             }
         }
         .skill-title {
-            color: white;
+            color: $white;
             margin: 0;
             padding: 15px;
         }
@@ -92,3 +87,72 @@ body, html {
         background-color: $blue;
     }
 }
+
+.hero {
+    background-color: $black;
+    .bcg {
+        color: $white;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        text-shadow: 0 0 5px rgba(255,255,255,.33);
+        top: 20%;
+        z-index: 9999;
+    }
+}
+.parallax-container {
+    perspective: 100px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    width: 100vw;
+  }
+  
+  .parallax-layer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1500px;
+    
+    img{
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      min-width: 2500px;
+    }
+  }
+  
+  .parallax-cover{
+    background: linear-gradient(transparent 5%,#fff 31%);
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    min-height: 2000px;
+    z-index: 9999;
+    .main-content {
+        margin-top: 625px;
+        padding-bottom: 150px;
+    }
+  }
+  
+  $parallax__layers: 6;
+  
+  @for $i from 0 through $parallax__layers {
+    $x: ($parallax__layers - $i) / 2;
+    .layer-#{$i}{
+       transform: translateZ(-100 * $x#{px}) scale($x + 1);
+    }
+  }

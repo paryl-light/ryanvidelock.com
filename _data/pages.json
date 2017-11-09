@@ -3,7 +3,7 @@
     "id": "1",
     "name": "Me",
     "slug": "#me",
-    "url": "index",
+    "url": "#me",
     "layout": "home.html",
     "meta_title": "Web Developer Ryan Videlock",
     "meta_description": "A web developer and SEO specialist, Ryan Videlock can help out on any project, large or small.",

@@ -7,8 +7,12 @@ layout: home
     <body{% if page.class %} class="{{ page.class | prepend: 'page--'  }}"{% else %} class="{{ page.layout | prepend: 'page--' }}"{% endif %}>
 		{% include components/navigation--mobile.html %}
         {% include regions/header.html %}
-
-        <div class="hero">
+        <div class="hero parallax-container">
+            <a id="me" class="sr-only"></a>
+            <div class="parallax-layer layer-1"><img src="/assets/img/code1.png" alt="" /></div>
+            <div class="parallax-layer layer-2"><img src="/assets/img/code2.png" alt="" /></div>
+            <div class="parallax-layer layer-3"><img src="/assets/img/code3.png" alt="" /></div>
+            <div class="parallax-layer layer-4"><img src="/assets/img/code4.png" alt="" /></div>
             <div class="bcg">
                 <div class="container">
                     <div class="hsContent">
@@ -17,9 +21,11 @@ layout: home
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container main-content">   
-            {{ content }}
+            <div class="parallax-cover">
+                <div class="container main-content">   
+                    {{ content }}
+                </div>
+            </div>
         </div>
         {% include regions/footer.html %}
 		{% include scripts.html %}
