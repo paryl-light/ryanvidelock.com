@@ -18,9 +18,12 @@ function skillHeight( ){
 		skill.off('mouseenter').on('mouseenter', function( ){
 			var newHeight = skillDesc.children('span').outerHeight(true);
 			skillDesc.height(newHeight);
+			skill.siblings().removeClass('active-skill');
+			skill.addClass('active-skill');
 		});
 		skill.off('mouseleave').on('mouseleave', function( ){
 			skillDesc.height(0);
+			skill.removeClass('active-skill');
 		});
 	})
 }

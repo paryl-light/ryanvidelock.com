@@ -1,9 +1,21 @@
 [
   {
     "id": "1",
-    "name": "Me",
+    "name": "Top",
     "slug": "#me",
     "url": "#me",
+    "layout": "home.html",
+    "meta_title": "Web Developer Ryan Videlock",
+    "meta_description": "A web developer and SEO specialist, Ryan Videlock can help out on any project, large or small.",
+    "short_description": "",
+    "parent_id": "0",
+    "color": "white"
+  },
+  {
+    "id": "1",
+    "name": "Skills",
+    "slug": "#my-skills",
+    "url": "#my-skills",
     "layout": "home.html",
     "meta_title": "Web Developer Ryan Videlock",
     "meta_description": "A web developer and SEO specialist, Ryan Videlock can help out on any project, large or small.",
