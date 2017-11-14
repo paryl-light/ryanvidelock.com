@@ -3,6 +3,7 @@ $(window).on('load', function() {
 	$(window).on('resize', function( ){
 		skillHeight( );
 	});
+	reName();
 	skillHeight( );
 	/*$(document).alton({
 		firstClass: 'hero',
@@ -10,6 +11,12 @@ $(window).on('load', function() {
 		bodyContainer: 'main-content', // Tell Alton the body class
 	});*/
 });
+function reName(){
+	if(window.location.hostname.match(/alyssa/)){
+		$('.hsContent').replace(/Ryan/, "Alyssa");
+		document.title = document.title.replace(/Ryan/, "Alyssa");
+	}
+}
 function skillHeight( ){
 	var newHeight;
 	$('.skill').each(function( ){
