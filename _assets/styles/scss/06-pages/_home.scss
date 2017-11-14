@@ -92,14 +92,31 @@ body, html {
     background-color: $black;
     .bcg {
         color: $white;
+        font-family: "Roboto Mono", sans-serif;
+        font-weight: 700;
         left: 0;
         margin: 0 auto;
         position: absolute;
         right: 0;
         text-align: center;
-        text-shadow: 0 0 5px rgba(255,255,255,.33);
+        text-shadow: 0 0 20px 2px rgba(0,0,0,1);
         top: 20%;
         z-index: 9999;
+        .hsContent {
+            background-color: rgba(0,0,0, .5);
+        }
+        h1 {
+            font-size: 48px;
+            @include media-breakpoint-up(md){
+                font-size: 72px;
+            }
+        }
+        h2 {
+            font-size: 24px;
+            @include media-breakpoint-up(md){
+                font-size: 64px;
+            }
+        }
     }
 }
 .parallax-container {
@@ -123,13 +140,17 @@ body, html {
     bottom: 0;
     left: 50%;
     margin-left: -1500px;
-    
+    height: 2000px;
+    overflow: hidden;
     img{
       display: block;
       position: absolute;
       top: 0;
       width: 100%;
       min-width: 2500px;
+    }
+    &.layer-1 {
+        transform: translateZ(-148.5px) scale(2.5) rotate(180deg);
     }
   }
   
@@ -148,11 +169,11 @@ body, html {
     }
   }
   
-  $parallax__layers: 6;
+  $parallax__layers: 3;
   
   @for $i from 0 through $parallax__layers {
     $x: ($parallax__layers - $i) / 2;
     .layer-#{$i}{
-       transform: translateZ(-100 * $x#{px}) scale($x + 1);
+       transform: translateZ(-99 * $x#{px}) scale($x + 1);
     }
   }

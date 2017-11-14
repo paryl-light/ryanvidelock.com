@@ -9,7 +9,7 @@ meta_description:
 {% capture index %}{% include pages/index.md %}{% endcapture %}
 {{ index | markdownify }}
 
-### What kind of skills you can expect from me
+### My Skills
 <div class="skills">
     <ul class="general-skills">
 {% assign generalSkills = site.data.skills | where, "category", "general"  %}
