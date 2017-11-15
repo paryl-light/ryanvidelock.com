@@ -5,11 +5,9 @@ $(window).on('load', function() {
 	});
 	reName();
 	skillHeight( );
-	/*$(document).alton({
-		firstClass: 'hero',
-		scrollMode: 'headerScroll',
-		bodyContainer: 'main-content', // Tell Alton the body class
-	});*/
+	$('.menu-bar').on('click', function( ){
+		$('.navigation-container').toggleClass('show-nav');
+	});
 });
 function reName(){
 	if(window.location.hostname.match(/alyssa/)){
