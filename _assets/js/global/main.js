@@ -1,13 +1,14 @@
 // MOBILE MENU TRIGGER
 $(window).on('load', function() {
 	$(window).on('resize', function( ){
-		skillHeight( );
+		projectHeight( );
 	});
 	reName();
-	skillHeight( );
+	projectHeight( );
 	$('.menu-bar').on('click', function( ){
 		$('.navigation-container').toggleClass('show-nav');
 	});
+	showObjects();
 });
 function reName(){
 	if(window.location.hostname.match(/alyssa/)){
@@ -15,20 +16,42 @@ function reName(){
 		document.title = document.title.replace(/Ryan/, "Alyssa");
 	}
 }
-function skillHeight( ){
+function projectHeight( ){
 	var newHeight;
-	$('.skill').each(function( ){
-		var skill = $(this);
-		var skillDesc = skill.children('.skill-description');
-		skill.off('mouseenter').on('mouseenter', function( ){
-			var newHeight = skillDesc.children('span').outerHeight(true);
-			skillDesc.height(newHeight);
-			skill.siblings().removeClass('active-skill');
-			skill.addClass('active-skill');
+	$('.project').each(function( ){
+		var project = $(this);
+		var projectDesc = project.children().children('.project-description');
+		project.off('mouseenter').on('mouseenter', function( ){
+			var newHeight = projectDesc.children('span').outerHeight(true);
+			projectDesc.height(newHeight);
+			project.siblings().removeClass('active-project');
+			project.addClass('active-project');
 		});
-		skill.off('mouseleave').on('mouseleave', function( ){
-			skillDesc.height(0);
-			skill.removeClass('active-skill');
+		project.off('mouseleave').on('mouseleave', function( ){
+			projectDesc.height(0);
+			project.removeClass('active-project');
 		});
 	})
+}
+function showObjects() {
+	var skill_container = $('.skills');
+	$('.parallax-container').on('scroll', function( ){
+		if(isScrolledIntoView(skill_container[0]) === true && skill_container.hasClass('skill-appear') === false){
+			skill_container.addClass('skill-appear');
+		}
+		else if(isScrolledIntoView(skill_container[0]) === false && skill_container.hasClass('skill-appear') === true) {
+			skill_container.removeClass('skill-appear');
+		}
+	});
+}
+
+function isScrolledIntoView(el) {
+    var elemTop = el.getBoundingClientRect().top;
+    var elemBottom = el.getBoundingClientRect().bottom;
+
+    // Only completely visible elements return true:
+    //var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    // Partially visible elements return true:
+    isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+    return isVisible;
 }
