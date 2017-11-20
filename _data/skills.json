@@ -3,154 +3,154 @@
         "id": 1,
         "name": "Teamwork",
         "description": "I work well with teams both large and small, I'm friendly and helpful",
-        "Skill Level": "10/10",
+        "level": "5",
         "category": "general"
     },
     {
         "id": 2,
         "name": "Motivation",
         "description": "I love web development work, it's a dream job",
-        "Skill Level": "10/10",
+        "level": "5",
         "category": "general"
     },
     {
         "id": 3,
         "name": "Learning",
         "description": "I'm always willing to learn new things, in fact it's the biggest proponent of why I love Development",
-        "Skill Level": "10/10",
+        "level": "5",
         "category": "general"
     },
     {
         "id": 4,
         "name": "Frameworks",
         "description": "Larvel and other frameworks are amazingly handy and I've used a fair amount of them.",
-        "Skill Level": "5/10",
+        "level": "3",
         "category": "general"
     },
     {
         "id": 5,
         "name": "HTML5",
         "description": "I've been learning HTML since way back when I used notepad for coding.",
-        "Skill Level": "10/10",
+        "level": "5",
         "category": "webDevelopment"
     },
     {
         "id": 6,
         "name": "CSS3",
         "description": "A fundamental block of design and something that every developer needs to know.",
-        "Skill Level": "8/10",
+        "level": "4",
         "category": "webDevelopment"
     },
     {
         "id": 7,
         "name": "SCSS & LESS",
         "description": "Progromatic CSS is the greatest thing to have happened to CSS. I've been working with this for a long time now and have improved greatly.",
-        "Skill Level": "7/10",
+        "level": "4",
         "category": "webDevelopment"
     },
     {
         "id": 8,
         "name": "Javascript & ES6",
         "description": "One of the easiest scripting languages that just keeps getting better. I started with the basics and Jquery, and I've been learning ES6 recently.",
-        "Skill Level": "6/10",
+        "level": "3",
         "category": "webDevelopment"
     },
     {
         "id": 9,
         "name": "PHP",
         "description": "The fastest server side language to get a project up and running. This is the most used skill I have.",
-        "Skill Level": "7/10",
+        "level": "4",
         "category": "webDevelopment"
     },
     {
         "id": 10,
         "name": "C#",
         "description": "One of the first programming languages I learned and something that holds a place in the heart of how I program.",
-        "Skill Level": "4/10",
+        "level": "2",
         "category": "webDevelopment"
     },
     {
         "id": 11,
         "name": "SQL",
         "description": "Database languages are both easy and incredibly powerful. Learning how to use them is one of the most important things every developer should do.",
-        "Skill Level": "6/10",
+        "level": "4",
         "category": "webDevelopment"
     },
     {
         "id": 12,
         "name": "Java",
         "description": "A language that I've quickly picked up due to knowledge of other languages. It's uses are great but I haven't had much time to get familiar with it.",
-        "Skill Level": "3/10",
+        "level": "2",
         "category": "webDevelopment"
     },
     {
         "id": 13,
         "name": "React",
         "description": "One of the 'newest' technologies out there as of this time (Dating myself, yes I know). I'm quickly picking it up as it's incredibly easy to learn",
-        "Skill Level": "3/10",
+        "level": "2",
         "category": "webDevelopment"
     },
     {
         "id": 14,
         "name": "Windows XP-10",
         "description": "Been using this since I'm a kid. I have a complete understanding of how to use this OS and how to troubleshoot it.",
-        "Skill Level": "10/10",
+        "level": "5",
         "category": "operatingSystem"
     },
     {
         "id": 15,
         "name": "Mac OSX+",
         "description": "Picked this up in my design days in college since everyone used it. Incredibly easy thanks to how user friendly the environment is.",
-        "Skill Level": "8/10",
+        "level": "4",
         "category": "operatingSystem"
     },
     {
         "id": 16,
         "name": "Ubuntu",
         "description": "Probably the least stressful version of linux I've used. I have some experience in other ones, but this one is very handy to know.",
-        "Skill Level": "6/10",
+        "level": "3",
         "category": "operatingSystem"
     },
     {
         "id": 17,
         "name": "Visual Studio 2008",
         "description": "Used this in college a lot and haven't picked it up in awhile. I still have knowledge on how to use it however.",
-        "Skill Level": "3/10",
+        "level": "2",
         "category": "developmentSoftware"
     },
     {
         "id": 18,
         "name": "Unity",
         "description": "I've used this for many tiny projects that haven't seen the light of day in a long time.",
-        "Skill Level": "5/10",
+        "level": "3",
         "category": "developmentSoftware"
     },
     {
         "id": 19,
         "name": "Flash",
         "description": "The first thing I learned in college. It's not used much anymore, for good reason, but it has it's place for animators and small indie games.",
-        "Skill Level": "7/10",
+        "level": "4",
         "category": "developmentSoftware"
     },
     {
         "id": 20,
         "name": "Photoshop & Illustrator",
         "description": "Photoshop and Illustrator are probably the best tools for editing and refining images, text and way way more. I've used it since I first started in development.",
-        "Skill Level": "",
+        "level": "5",
         "category": "developmentSoftware"
     },
     {
         "id": 21,
         "name": "Maya",
         "description": "A 3D program I've used for modeling assets for classes and personal projects",
-        "Skill Level": "4/10",
+        "level": "2",
         "category": "developmentSoftware"
     },
     {
         "id": 22,
         "name": "Intellij IDEA",
         "description": "My first true IDE that I've used. This is the environment I was using for learning Java.",
-        "Skill Level": "4/10",
+        "level": "3",
         "category": "developmentSoftware"
     }
 ]

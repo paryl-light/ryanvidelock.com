@@ -15,9 +15,16 @@ meta_description:
 {% assign generalSkills = site.data.skills | where, "category", "general"  %}
 {% for skill in generalSkills %}
     <li class="general-skill-{{skill.id}} skill">
-        <div class="progress-bar progress-bar-striped progress-bar-animated">
-        </div>
         <h4 class="skill-title">{{skill.name}}</h4>
+        <div class="skill-stars">
+            {% for counter in (1..skill.level) %}
+                <span>★</span>
+            {% endfor %}
+            {% assign leftoverSkill = 5 | minus: skill.level %}
+            {% for counter in (1..leftoverSkill) %}
+                <span>☆</span>
+            {% endfor %}
+        </div>
         <span class="skill-description"><span>{{skill.description}}</span></span>
     </li>
 {%endfor%}
@@ -26,9 +33,16 @@ meta_description:
 {% assign webDevelopment = site.data.skills | where, "category", "webDevelopment"  %}
 {% for skill in webDevelopment %}
     <li class="webDevelopment-skill-{{skill.id}} skill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" >
-        <div class="progress-bar progress-bar-striped progress-bar-animated">
-        </div>
         <h4 class="skill-title">{{skill.name}}</h4>
+        <div class="skill-stars">
+            {% for counter in (1..skill.level) %}
+                <span>★</span>
+            {% endfor %}
+            {% assign leftoverSkill = 5 | minus: skill.level %}
+            {% for counter in (1..leftoverSkill) %}
+                <span>☆</span>
+            {% endfor %}
+        </div>
         <span class="skill-description"><span>{{skill.description}}</span></span>
     </li>
 {%endfor%}
@@ -37,9 +51,16 @@ meta_description:
 {% assign operatingSystem = site.data.skills | where, "category", "operatingSystem"  %}
 {% for skill in operatingSystem %}
     <li class="operatingSystem-skill-{{skill.id}} skill">
-        <div class="progress-bar progress-bar-striped progress-bar-animated">
-        </div>
         <h4 class="skill-title">{{skill.name}}</h4>
+        <div class="skill-stars">
+            {% for counter in (1..skill.level) %}
+                <span>★</span>
+            {% endfor %}
+            {% assign leftoverSkill = 5 | minus: skill.level %}
+            {% for counter in (1..leftoverSkill) %}
+                <span>☆</span>
+            {% endfor %}
+        </div>
         <span class="skill-description"><span>{{skill.description}}</span></span>
     </li>
 {% endfor %}
@@ -48,9 +69,16 @@ meta_description:
 {% assign developmentSoftware = site.data.skills | where, "category", "developmentSoftware"  %}
 {% for skill in developmentSoftware %}
     <li class="developmentSoftware-skill-{{skill.id}} skill">
-        <div class="progress-bar progress-bar-striped progress-bar-animated">
-        </div>
         <h4 class="skill-title">{{skill.name}}</h4>
+        <div class="skill-stars">
+            {% for counter in (1..skill.level) %}
+                <span>★</span>
+            {% endfor %}
+            {% assign leftoverSkill = 5 | minus: skill.level %}
+            {% for counter in (1..leftoverSkill) %}
+                <span>☆</span>
+            {% endfor %}
+        </div>
         <span class="skill-description"><span>{{skill.description}}</span></span>
     </li>
 {% endfor %}
