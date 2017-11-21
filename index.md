@@ -9,6 +9,28 @@ meta_description:
 {% capture index %}{% include pages/index.md %}{% endcapture %}
 {{ index | markdownify }}
 
+
+<div class="projects-container">
+    <h3>My projects</h3>
+    <ul class="projects">
+{% assign projects = site.data.projects  %}
+{% for project in projects %}
+        <li class="project-{{project.id}} project">
+            <a href="{{project.link}}" target="_blank">
+                <h4 class="project-title">{{project.name}}</h4>
+                <span class="project-description">
+                    <span>
+                        {{project.description}}
+                        <img src="/assets/img/{{project.image}}" alt="{{project.alt}}" title="{{project.title}}" />
+                    </span>
+                </span>
+            </a>
+        </li>
+{%endfor%}
+    </ul>
+</div>
+
+
 ### My Skills
 <div class="skills">
     <ul class="general-skills">
@@ -83,26 +105,4 @@ meta_description:
     </li>
 {% endfor %}
 </ul>
-</div>
-
-
-
-<div class="projects-container">
-    <h3>My projects</h3>
-    <ul class="projects">
-{% assign projects = site.data.projects  %}
-{% for project in projects %}
-        <li class="project-{{project.id}} project">
-            <a href="{{project.link}}" target="_blank">
-                <h4 class="project-title">{{project.name}}</h4>
-                <span class="project-description">
-                    <span>
-                        {{project.description}}
-                        <img src="/assets/img/{{project.image}}" alt="{{project.alt}}" title="{{project.title}}" />
-                    </span>
-                </span>
-            </a>
-        </li>
-{%endfor%}
-    </ul>
 </div>
