@@ -44,7 +44,7 @@
     {
         "id": 7,
         "name": "SCSS & LESS",
-        "description": "Progromatic CSS is the greatest thing to have happened to CSS. I've been working with this for a long time now and have improved greatly.",
+        "description": "Programatic CSS is the greatest thing to have happened to CSS. I've been working with this for a long time now and have improved greatly.",
         "level": "4",
         "category": "webDevelopment"
     },
@@ -107,7 +107,7 @@
     {
         "id": 16,
         "name": "Ubuntu",
-        "description": "Probably the least stressful version of linux I've used. I have some experience in other ones, but this one is very handy to know.",
+        "description": "Probably the least stressful version of linux I've used. I have some experience in other distros, but this one is very handy to know.",
         "level": "3",
         "category": "operatingSystem"
     },
